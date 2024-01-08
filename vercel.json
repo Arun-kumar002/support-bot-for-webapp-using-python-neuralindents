@@ -1,0 +1,10 @@
+{
+    "functions": {
+        "api/chat": {
+            "handler": "chatbot.chat_bot",
+            "environment": {
+               
+            }
+        }
+    }
+}
