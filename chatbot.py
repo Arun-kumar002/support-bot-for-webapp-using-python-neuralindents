@@ -84,3 +84,8 @@ def chat_bot(body=Body()):
     res=get_response(init,intents)
     return {"error": "false","message":"got response successful","result":res,"init":init}
 
+@app.get("/")
+def server_check():
+
+    return {"error": "false","message":"server working"}
+
