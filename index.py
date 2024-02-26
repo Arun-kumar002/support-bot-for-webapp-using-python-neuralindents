@@ -77,7 +77,7 @@ app.add_middleware(
    allow_headers=["*"],
 )
 @app.post("/chat")
-def chat_bot(body=Body(question="hi?")):
+def chat_bot(body=Body(question="hi?", default="default_value")):
     print(body)
     init=predict_class(body["question"])
     print(init)
